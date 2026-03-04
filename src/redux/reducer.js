@@ -1,16 +1,16 @@
 import {
   FETCH_DATA_REQUEST,
   FETCH_DATA_SUCCESS,
-  FETCH_DATA_FAILURE
+  FETCH_DATA_FAILURE,
 } from './actions';
 
 const initialState = {
   loading: false,
   data: [],
-  error: ''
+  error: '',
 };
 
-const rootReducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_DATA_REQUEST:
       return { ...state, loading: true };
@@ -23,4 +23,4 @@ const rootReducer = (state = initialState, action) => {
   }
 };
 
-export default rootReducer;
+export default reducer;
