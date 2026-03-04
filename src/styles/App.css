@@ -1,22 +1,36 @@
-.header {
+.container {
   text-align: center;
+  font-family: serif;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-weight: bold;
   margin-bottom: 30px;
 }
 
-.grid-container {
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 0 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .card {
   border: 1px solid #ddd;
   padding: 20px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
-  border-radius: 4px;
+  text-align: left;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  background-color: #fff;
 }
 
 .card p {
   margin: 10px 0;
+  line-height: 1.5;
 }
